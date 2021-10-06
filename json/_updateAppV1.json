@@ -1,0 +1,34 @@
+{
+  "name": "MessagesV1",
+  "capabilities": {
+    "voice": {
+      "webhooks": {
+        "event_url": {
+          "address": "https://NGROK_URL/webhooks/event",
+          "http_method": "GET"
+        },
+        "answer_url": {
+          "address": "https://NGROK_URL/answer",
+          "http_method": "GET"
+        },
+        "fallback_answer_url": {
+          "address": "",
+          "http_method": "GET"
+        }
+      }
+    },
+    "messages": {
+      "webhooks": {
+        "inbound_url": {
+          "address": "https://NGROK_URL/webhooks/incoming",
+          "http_method": "POST"
+        },
+        "status_url": {
+          "address": "https://NGROK_URL/webhooks/status",
+          "http_method": "POST"
+        }
+      },
+      "version": "v1"
+    }
+  }
+}

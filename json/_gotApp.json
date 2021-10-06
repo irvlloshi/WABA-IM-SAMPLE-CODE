@@ -1,0 +1,34 @@
+{
+  "name": "MessagesV1",
+  "capabilities": {
+    "voice": {
+      "webhooks": {
+        "event_url": {
+          "address": "https://nids.nexmo.com/playground",
+          "http_method": "GET"
+        },
+        "answer_url": {
+          "address": "https://nids.nexmo.com/playground",
+          "http_method": "GET"
+        },
+        "fallback_answer_url": {
+          "address": "",
+          "http_method": "GET"
+        }
+      }
+    },
+    "messages": {
+      "webhooks": {
+        "inbound_url": {
+          "address": "https://vids.vonage.com/wa/incoming",
+          "http_method": "POST"
+        },
+        "status_url": {
+          "address": "https://vids.vonage.com/wa/event",
+          "http_method": "POST"
+        }
+      },
+      "version": "v0.1"
+    }
+  }
+}

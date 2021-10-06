@@ -1,0 +1,25 @@
+// INBOUND AFTER TEXT SENT
+POST /webhooks/inbound 200 20.751 ms - -
+🗞️  inbound {
+  to: '1201#####05',
+  from: '1575####3',
+  channel: 'whatsapp',
+  message_uuid: '412a850c-0100-4bbe-bda5-20982ce96d6a',
+  timestamp: '2021-09-01T22:30:36Z',
+  message_type: 'text',
+  text: '👋',
+  profile: { name: 'Kitt Phi' }
+}
+
+// SELECT LIST OPTION
+POST /webhooks/inbound 200 20.751 ms - -
+🗞️  inbound {
+  to: '1201#####05',
+  from: '1575####3',
+  channel: 'whatsapp',
+  message_uuid: '28e9e32c-9a42-414a-8749-80a360720a09',
+  timestamp: '2021-09-01T22:30:59Z',
+  message_type: 'reply',
+  reply: { id: 'row1', title: 'Red', description: 'Take the red pill' },
+  profile: { name: 'Kitt Phi' }
+}
